@@ -59,3 +59,25 @@
     sum(50,50);
     sum(70, 20);
 ?>
+
+<?php
+
+    function name ($hello='',$E=3){
+        return $hello . $E;
+    }
+
+    echo name();
+
+    function n ($hello,$E=3){
+        return $hello . $E;
+    }
+
+    echo n(1);
+
+    function no ($hello,$E=3, $g=''){
+        return $hello . $E;
+    }
+
+    echo no(1,2);
+
+?>
