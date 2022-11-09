@@ -16,6 +16,18 @@
 
     echo "<br>";
 
+    $str = "Hi I love php, and i love php tool";
+    $find = [" ", ","];
+    $replace = ["~", "_"];
+
+    echo str_replace($find,$replace,$str);
+
+    echo "<br>";
+
+    $str = "Hi/I £love_php 41563456450 00000, -and !i 124love: php tool";
+    echo preg_replace('/[^A-Za-z0-9\-]/', '_', $str);
+    echo "<br>";
+
     echo "<u>substr_replace</u><br>";
     $str = "I love php, and i love php tool";
 
